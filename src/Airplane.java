@@ -1,11 +1,19 @@
 import java.util.Objects;
 
-public class Airplane {
+public class Airplane implements Comparable<Airplane> {
     private String country;
     private String manufacturer;
     private String model;
     private int maxSpeed;
     private int range;
+
+    public Airplane(String country, String manufacturer, String model, int maxSpeed, int range) {
+        this.country = country;
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.maxSpeed = maxSpeed;
+        this.range = range;
+    }
 
     @Override
     public boolean equals(Object obj) {
@@ -23,5 +31,13 @@ public class Airplane {
     @Override
     public int hashCode() {
         return Objects.hash(country, manufacturer, model, maxSpeed, range);
+    }
+
+    @Override
+    public int compareTo(Airplane other) {
+        if (this.maxSpeed != other.maxSpeed) {
+            return Integer.compare(this.maxSpeed, other.maxSpeed);
+        }
+        return Integer.compare(other.range, this.range);
     }
 }
