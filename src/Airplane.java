@@ -25,7 +25,6 @@ public class Airplane implements Comparable<Airplane> {
                 model.equals(airplane.model) &&
                 maxSpeed == airplane.maxSpeed &&
                 range == airplane.range;
-
     }
 
     @Override
@@ -39,5 +38,14 @@ public class Airplane implements Comparable<Airplane> {
             return Integer.compare(this.maxSpeed, other.maxSpeed);
         }
         return Integer.compare(other.range, this.range);
+    }
+
+    @Override
+    public String toString() {
+        return "Country: " + country +
+                ", Manufacturer: " + manufacturer +
+                ", Model: " + model +
+                ", Max Speed: " + maxSpeed +
+                ", Range: " + range;
     }
 }
