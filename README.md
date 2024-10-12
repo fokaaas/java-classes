@@ -1,4 +1,4 @@
-## Java Arrays
+## Java Classes
 
 When number in the list n = 2, then:
 - C11 = 2 % 11 = 2
@@ -11,7 +11,9 @@ Firstly, clone this repo:
 git clone git@github.com:fokaaas/java-classes.git
 ```
 
-Using IntelliJ IDEA run the Main class.
+Using any IDE import this project as a Maven project.
+
+Then, run the Main class.
 
 ## How to find the documentation?
 

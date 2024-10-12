@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"<Unnamed>","l":"Airplane"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Main"}];updateSearchResults();
+typeSearchIndex = [{"p":"com.stbasarab","l":"Airplane"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.stbasarab","l":"Main"}];updateSearchResults();
